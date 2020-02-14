@@ -10,8 +10,8 @@ const production = !process.env.ROLLUP_WATCH;
 export default [
   { file: pkg.module, format: 'es' },
   { file: pkg.main, format: 'cjs' },
-  { file: pkg.unpkg, format: 'iife', name: 'rrwebPlayer' },
-  { file: 'public/bundle.js', format: 'iife', name: 'rrwebPlayer' },
+  { file: pkg.unpkg, format: 'iife', name: 'PF_rrwebPlayer' },
+  { file: 'public/bundle.js', format: 'iife', name: 'PF_rrwebPlayer' },
 ].map(output => ({
   input: 'src/Player.html',
   output,
